@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Border</title>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="http://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" href="http://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
+<style>
+button{
+margin:10px;
+
+}
+
+
+</style>
+</head>
+<body>
+<table id="example" class="display nowrap" style="width:100%">
+        <thead>
+            <tr>
+                
+                <th> Name</th>
+                <th>Roll Number</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+	  <tr>
+	    <td>Kai</td>
+	    <td>11</td>
+	    <td><button style="background-color:#7eff69;">Edit</button><button style="background-color:#Ff6969;">Delete</button></td>
+	  </tr>
+	   <tr>
+	    <td>Law</td>
+	    <td>12</td>
+	    <td><button style="background-color:#7eff69;">Edit</button><button style="background-color:#Ff6969;">Delete</button></td>
+	    	
+	  </tr>
+	  <tr>
+	    <td>Ram</td>
+	    <td>13</td>
+	    <td><button style="background-color:#7eff69;">Edit</button><button style="background-color:#Ff6969;">Delete</button></td>		
+	  </tr>
+	</tbody>
+</table>
+</body>
+<script>
+let table=new DataTable("#example");
+
+
+</script>
+<script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.5/js/dataTables.jqueryui.min.js"></script>
+<script src="https://cdn.datatables.net/scroller/2.2.0/js/dataTables.scroller.min.js"></script>
+</html>
