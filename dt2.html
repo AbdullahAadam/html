@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Border</title>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="http://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" href="http://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
+</head>
+<body>
+<form>
+Enter Your Name:<input type="text" id="x"><br>
+<br>
+Enter your Roll No:<input type="number" id="y"><br>
+</form>
+<button id="asd">Add</button>
+<table id="example" class="display nowrap" style="width:100%">
+        <thead>
+            <tr>
+                
+                <th> Name</th>
+                <th>Roll Number</th>
+            </tr>
+        </thead>
+        <tbody>
+	  <tr>
+	    <td>Kai</td>
+	    <td>11</td>	
+	  </tr>
+	   <tr>
+	    <td>Law</td>
+	    <td>12</td>	
+	  </tr>
+	  <tr>
+	    <td>Ram</td>
+	    <td>13</td>	
+	  </tr>
+	</tbody>
+</table>
+<script>
+let table = new DataTable("#example");
+$(document).ready(function(){
+  $("#asd").click(function(){
+  	name=$("#x").val();
+  	age=$("#y").val();
+  	table.row.add({0:name,1:age}).draw(false);
+  	//table.draw(true);
+  	
+  
+  
+  
+  
+  
+  });
+
+
+});
+
+</script>
+<script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.5/js/dataTables.jqueryui.min.js"></script>
+<script src="https://cdn.datatables.net/scroller/2.2.0/js/dataTables.scroller.min.js"></script>
+</body>
+</html>
